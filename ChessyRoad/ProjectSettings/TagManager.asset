@@ -12,6 +12,7 @@ TagManager:
   - BishopFullZigZag
   - Enemy
   - PlaceChecker
+  - Ground
   layers:
   - Default
   - TransparentFX

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4072433831561112888}
   m_Layer: 3
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,9 +40,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4072433831561112894}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 2, y: 0.2, z: 2}
   m_Center: {x: 0, y: -0.1, z: 0}
 --- !u!1 &4072433832573813134
@@ -56,7 +64,7 @@ GameObject:
   - component: {fileID: 4072433832573813135}
   m_Layer: 0
   m_Name: WhiteSquare
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,6 +91,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 4072433832573813135}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 22433d4ee62bfe1418f8b451858f8df4, type: 3}
@@ -133,7 +142,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square_W
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 22433d4ee62bfe1418f8b451858f8df4, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22433d4ee62bfe1418f8b451858f8df4, type: 3}
 --- !u!4 &4543720271430697687 stripped
 Transform:

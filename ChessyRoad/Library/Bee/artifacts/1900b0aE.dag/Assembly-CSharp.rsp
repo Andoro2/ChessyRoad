@@ -365,6 +365,7 @@
 "Assets/0_Scripts/Menus/leaderboard.cs"
 "Assets/0_Scripts/Menus/MenuManager.cs"
 "Assets/0_Scripts/Menus/saveScore.cs"
+"Assets/0_Scripts/Menus/SettingsMenu.cs"
 "Assets/0_Scripts/Menus/splashScene.cs"
 "Assets/0_Scripts/PeacesMovement/Bishop_AddaptZigZag.cs"
 "Assets/0_Scripts/PeacesMovement/Bishop_FullZigZag.cs"

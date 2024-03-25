@@ -6,6 +6,7 @@ using System.Linq;
 public class MasterMovement : MonoBehaviour
 {
     static public List<Vector3> EnemyPositions = new List<Vector3>();
+    static public GameObject[] m_Enemies;
 
     int Iteration = 0;
 
@@ -24,80 +25,86 @@ public class MasterMovement : MonoBehaviour
         GameObject[] m_BishopsRandom = GameObject.FindGameObjectsWithTag("BishopRandom");
         GameObject[] m_BishopsFullZigZag = GameObject.FindGameObjectsWithTag("BishopFullZigZag");
 
-        GameObject[] m_Enemies = m_Pawns
+        m_Enemies = m_Pawns
             .Concat(m_Rooks)
             .Concat(m_Knights)
             .Concat(m_BishopsZigZag)
             .Concat(m_BishopsRandom)
             .Concat(m_BishopsFullZigZag).ToArray();
 
-        EnemiesInPlace = InPlaceCheck(m_Enemies);
 
-        if (GameController.Turn == GameController.Turns.Enemy)
+        if (GameController.Turn == GameController.Turns.EnemyMove)
         {
-            if (Iteration == 0)
+            //StartCoroutine(EnemyTurn());
+
+            foreach (GameObject Enemy in m_Enemies)
             {
-                foreach (GameObject Enemy in m_Enemies)
+                if (Enemy.GetComponent<InPlaceChecker>().PieceEnabled && Enemy.transform.position != GameObject.FindWithTag("Player").gameObject.transform.position)
                 {
-                    if (Enemy.GetComponent<InPlaceChecker>().PieceEnabled && Enemy.transform.position != GameObject.FindWithTag("Player").gameObject.transform.position)
+                    switch (Enemy.tag)
                     {
-                        switch (Enemy.tag)
-                        {
-                            case ("Rook"):
-                                Enemy.GetComponent<Rook_Line>().SetNewPosition();
-                                break;
-                            case ("Knight"):
-                                Enemy.GetComponent<Knight>().SetNewPosition();
-                                break;
-                            case ("BishopRandom"):
-                                Enemy.GetComponent<Bishop_Random>().SetNewPosition();
-                                break;
-                            case ("BishopZigZag"):
-                                Enemy.GetComponent<Bishop_AddaptZigZag>().SetNewPosition();
-                                break;
-                            case ("BishopFullZigZag"):
-                                Enemy.GetComponent<Bishop_FullZigZag>().SetNewPosition();
-                                break;
-                            case ("Pawn"):
-                                Enemy.GetComponent<Pawn>().SetNewPosition();
-                                break;
-                        }
-                    }
-                    else
-                    {
-                        Enemy.GetComponent<InPlaceChecker>().PieceEnable();
+                        case ("Rook"):
+                            Enemy.GetComponent<Rook_Line>().SetNewPosition();
+                            break;
+                        case ("Knight"):
+                            Enemy.GetComponent<Knight>().SetNewPosition();
+                            break;
+                        case ("BishopRandom"):
+                            Enemy.GetComponent<Bishop_Random>().SetNewPosition();
+                            break;
+                        case ("BishopZigZag"):
+                            Enemy.GetComponent<Bishop_AddaptZigZag>().SetNewPosition();
+                            break;
+                        case ("BishopFullZigZag"):
+                            Enemy.GetComponent<Bishop_FullZigZag>().SetNewPosition();
+                            break;
+                        case ("Pawn"):
+                            Enemy.GetComponent<Pawn>().SetNewPosition();
+                            break;
                     }
                 }
-                Iteration = 1;
-            }
-
-            if (Iteration == 1)
-            {
-                if (EnemiesInPlace)
+                else
                 {
-                    if(EnemyPositions.Contains(m_Player.transform.position))
+                    Enemy.GetComponent<InPlaceChecker>().PieceEnable();
+                }
+            }
+            GameController.Turn = GameController.Turns.WaitForEnemy;
+        }
+        if(GameController.Turn == GameController.Turns.WaitForEnemy)
+        {
+            if (EnemiesReachedPlace())
+            {
+                foreach (Vector3 EnemyPlace in EnemyPositions)
+                {
+                    if(Vector3.Distance(EnemyPlace, m_Player.transform.position) < 0.1)
                     {
                         GameObject.FindWithTag("GameController").GetComponent<GameController>().Death();
-                    }
-                    else
-                    {
-                        GameController.Turn = GameController.Turns.Player;
-                        Iteration = 0;
+                        break;
                     }
                 }
-            }            
+
+                GameController.Turn = GameController.Turns.Player;
+                Iteration = 0;
+            }
         }
         
         EnemyPositions.Clear();
     }
-    static public bool InPlaceCheck(GameObject[] Enemigos)
+    static public bool EnemiesReachedPlace()
     {
-        foreach (GameObject Enemigo in Enemigos)
-        {
-            if (!Enemigo.GetComponent<InPlaceChecker>().InPlace) return false;
-        }
-        return true;
+        InPlaceChecker[] PlaceCheckers = FindObjectsOfType<InPlaceChecker>();
+        int InPlaceCounter = 0;
 
+        foreach (InPlaceChecker Comprobante in PlaceCheckers)
+        {
+            if (Comprobante.InPlace)
+            {
+                InPlaceCounter++;
+            }
+        }
+
+        if (InPlaceCounter == PlaceCheckers.Count()) return true;
+        else return false;
     }
     static public bool isObjectHere(Vector3 position)
     {

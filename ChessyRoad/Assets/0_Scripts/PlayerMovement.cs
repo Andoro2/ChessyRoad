@@ -23,21 +23,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject[] m_Pawns = GameObject.FindGameObjectsWithTag("Pawn");
-        GameObject[] m_Rooks = GameObject.FindGameObjectsWithTag("Rook");
-        GameObject[] m_Knights = GameObject.FindGameObjectsWithTag("Knight");
-        GameObject[] m_BishopsZigZag = GameObject.FindGameObjectsWithTag("BishopZigZag");
-        GameObject[] m_BishopsRandom = GameObject.FindGameObjectsWithTag("BishopRandom");
-        GameObject[] m_BishopsFullZigZag = GameObject.FindGameObjectsWithTag("BishopFullZigZag");
-
-        GameObject[] m_Enemies = m_Pawns
-            .Concat(m_Rooks)
-            .Concat(m_Knights)
-            .Concat(m_BishopsZigZag)
-            .Concat(m_BishopsRandom)
-            .Concat(m_BishopsFullZigZag).ToArray();
-
-        if (GameController.Turn == GameController.Turns.Player && MasterMovement.InPlaceCheck(m_Enemies))
+        if (GameController.Turn == GameController.Turns.Player && MasterMovement.EnemiesReachedPlace())
         {
             if (Input.GetKeyDown(KeyCode.W) && !HasMoved)
             {
@@ -113,12 +99,15 @@ public class PlayerMovement : MonoBehaviour
                     zPos = (int)transform.position.z;
                 }
 
-                foreach (GameObject Enemy in m_Enemies)
+                foreach (GameObject Enemy in MasterMovement.m_Enemies)
                 {
                     if (Enemy.transform.position == NextPosition) Enemy.GetComponent<InPlaceChecker>().Death();
                 }
 
-                GameController.Turn = GameController.Turns.Enemy;
+                transform.position = new Vector3(Mathf.Round(transform.position.x),
+                    Mathf.Round(transform.position.y),
+                    Mathf.Round(transform.position.z));
+                GameController.Turn = GameController.Turns.EnemyMove;
 
                 HasMoved = false;
             }
@@ -127,15 +116,24 @@ public class PlayerMovement : MonoBehaviour
         if (transform.position.y < -5)
         {
             GameObject.FindWithTag("GameController").GetComponent<GameController>().Death();
-            if(transform.GetChild(0).gameObject.activeSelf) transform.GetChild(0).gameObject.SetActive(false);
-            //if (transform.GetChild(1).gameObject.activeSelf) transform.GetChild(1).gameObject.SetActive(false);
+            if (GameController.PlayerColor == GameController.PlayerColors.Black) transform.GetChild(0).gameObject.SetActive(false);
+            else transform.GetChild(1).gameObject.SetActive(false);
 
 
             Rigidbody rb = GetComponent<Rigidbody>();
 
             rb.constraints = RigidbodyConstraints.FreezePositionY;
+        }
 
-            //Destroy(gameObject);
+        if (GameController.PlayerColor == GameController.PlayerColors.Black)
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(1).gameObject.SetActive(false);
+        }
+        else
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(1).gameObject.SetActive(true);
         }
     }
     public void IsEnemyHere(Vector3 position)

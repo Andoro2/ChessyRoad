@@ -13,7 +13,6 @@ public class Rook_Line : MonoBehaviour
 
     public GameObject m_Player;
 
-    // Start is called before the first frame update
     void Start()
     {
         m_Player = GameObject.FindWithTag("Player");
@@ -22,7 +21,6 @@ public class Rook_Line : MonoBehaviour
         Side = Random.Range(0, 2);
     }
 
-    // Update is called once per frame
     void Update()
     {
         GetComponent<InPlaceChecker>().SetBool(InPlace);
@@ -54,8 +52,6 @@ public class Rook_Line : MonoBehaviour
             bool Horizontable = true;
 
             float incrementoX = (m_Player.transform.position.x - transform.position.x > 0) ? 2 : -2;
-
-            Debug.Log("Horizonteable mongolín");
 
             for (float x = transform.position.x + incrementoX; x != m_Player.transform.position.x; x += incrementoX)
             {
@@ -123,6 +119,7 @@ public class Rook_Line : MonoBehaviour
             }
         }
 
+        NextPos = new Vector3(Mathf.Round(NextPos.x), Mathf.Round(NextPos.y), Mathf.Round(NextPos.z));
         MasterMovement.EnemyPositions.Add(NextPos);
 
         return NextPos;

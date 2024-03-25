@@ -24,12 +24,12 @@ public class TerrainManager : MonoBehaviour
         BSquare = Resources.Load<GameObject>("PreFabs/BlackSquare");
 
         // Load pieces to spawn
-        m_Foes.Add(Resources.Load<GameObject>("PreFabs/B_RookL"));
-        m_Foes.Add(Resources.Load<GameObject>("PreFabs/B_Knight"));
-        m_Foes.Add(Resources.Load<GameObject>("PreFabs/B_Pawn"));
-        m_Foes.Add(Resources.Load<GameObject>("PreFabs/B_BishopFZZ"));
-        m_Foes.Add(Resources.Load<GameObject>("PreFabs/B_BishopZZ"));
-        m_Foes.Add(Resources.Load<GameObject>("PreFabs/B_BishopR"));
+        m_Foes.Add(Resources.Load<GameObject>("PreFabs/Rook"));
+        m_Foes.Add(Resources.Load<GameObject>("PreFabs/Knight"));
+        m_Foes.Add(Resources.Load<GameObject>("PreFabs/Pawn"));
+        m_Foes.Add(Resources.Load<GameObject>("PreFabs/BishopFZZ"));
+        m_Foes.Add(Resources.Load<GameObject>("PreFabs/BishopZZ"));
+        m_Foes.Add(Resources.Load<GameObject>("PreFabs/BishopRand"));
 
         Enemies = new GameObject();
         Enemies.name = "Enemigos";

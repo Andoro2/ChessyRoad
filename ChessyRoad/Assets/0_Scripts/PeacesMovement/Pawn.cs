@@ -79,6 +79,7 @@ public class Pawn : MonoBehaviour
             NextPos = transform.position;
         }
 
+        NextPos = new Vector3(Mathf.Round(NextPos.x), Mathf.Round(NextPos.y), Mathf.Round(NextPos.z));
         MasterMovement.EnemyPositions.Add(NextPos);
 
         return NextPos;

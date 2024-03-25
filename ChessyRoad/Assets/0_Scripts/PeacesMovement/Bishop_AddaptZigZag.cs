@@ -57,8 +57,6 @@ public class Bishop_AddaptZigZag : MonoBehaviour
             float incrementoX = (m_Player.transform.position.x - transform.position.x > 0) ? 2 : -2;
             float incrementoZ = (m_Player.transform.position.z - transform.position.z > 0) ? 2 : -2;
 
-            Debug.Log("Diagonalizable mongolín");
-
             for (float x = transform.position.x + incrementoX, z = transform.position.z + incrementoZ; x != m_Player.transform.position.x && z != m_Player.transform.position.z; x += incrementoX, z += incrementoZ)
             {
                 if (!MasterMovement.isObjectHere(new Vector3(x, 0, z)))
@@ -112,6 +110,7 @@ public class Bishop_AddaptZigZag : MonoBehaviour
             NextPos = transform.position;
         }
 
+        NextPos = new Vector3(Mathf.Round(NextPos.x), Mathf.Round(NextPos.y), Mathf.Round(NextPos.z));
         MasterMovement.EnemyPositions.Add(NextPos);
 
         return NextPos;

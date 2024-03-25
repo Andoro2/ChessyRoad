@@ -47,7 +47,7 @@ public class MenuManager : MonoBehaviour
         PM.enabled = true;
         GameIsPaused = false;
     }
-    public void Play()
+    public void NewGame()
     {
         if(TerrainManager.Enemies != null)
         {
@@ -76,6 +76,7 @@ public class MenuManager : MonoBehaviour
 
         GC.transform.position = Vector3.zero;
         GC.GetComponent<GameController>().enabled = true;
+        GC.GetComponent<GameController>().ResetTime();
         GC.GetComponent<MasterMovement>().enabled = true;
         GC.GetComponent<TerrainManager>().enabled = true;
 
@@ -122,6 +123,7 @@ public class MenuManager : MonoBehaviour
 
         GC.transform.position = Vector3.zero;
         GC.GetComponent<GameController>().enabled = true;
+        GC.GetComponent<GameController>().ResetTime();
         GC.GetComponent<MasterMovement>().enabled = true;
         GC.GetComponent<TerrainManager>().enabled = true;
 

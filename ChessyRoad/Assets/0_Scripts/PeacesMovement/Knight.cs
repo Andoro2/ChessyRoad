@@ -69,8 +69,7 @@ public class Knight : MonoBehaviour
 
         if (AvailablePositions.Count == 0)
         {
-            MasterMovement.EnemyPositions.Add(transform.position);
-            AvailablePositions.Add(transform.position);
+            NextPos = transform.position;
         }
         else
         {
@@ -85,8 +84,10 @@ public class Knight : MonoBehaviour
             {
                 NextPos = AvailablePositions[Random.Range(0, AvailablePositions.Count)];
             }
-            MasterMovement.EnemyPositions.Add(NextPos);
         }
+
+        NextPos = new Vector3(Mathf.Round(NextPos.x), Mathf.Round(NextPos.y), Mathf.Round(NextPos.z));
+        MasterMovement.EnemyPositions.Add(NextPos);
 
         return NextPos;
     }

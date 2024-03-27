@@ -64,8 +64,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106377d4e95630f4580923f496c92206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ExtraTime: 2.5
   InPlace: 1
   PieceEnabled: 0
+  ExtraTimeText: {fileID: 5223205683163673489, guid: 603250d53b1235e47b5fe6bc46179975, type: 3}
 --- !u!1001 &2805633783479791396
 PrefabInstance:
   m_ObjectHideFlags: 0

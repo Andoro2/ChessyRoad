@@ -109,6 +109,12 @@ public class PlayerMovement : MonoBehaviour
                     Mathf.Round(transform.position.z));
                 GameController.Turn = GameController.Turns.EnemyMove;
 
+                if (GameController.GameMode == GameController.GameModes.Stress)
+                {
+                    GameObject.FindWithTag("GameController").GetComponent<GameController>().NewEnemyTurn();
+                    //GameController.NewEnemyTurn();
+                }
+
                 HasMoved = false;
             }
         }
@@ -144,7 +150,6 @@ public class PlayerMovement : MonoBehaviour
         {
             if (EnemyTags.Contains(c.tag))
             {
-                // Debug.Log(c.gameObject.name);
                 c.gameObject.GetComponent<InPlaceChecker>().Death();
             }
         }

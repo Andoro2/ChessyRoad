@@ -7,7 +7,7 @@ public class MenuManager : MonoBehaviour
 {
     //Pause Menu
     public static bool GameIsPaused = false;
-    public GameObject MainMenu, PauseMenu, InGameUI;
+    public GameObject MainMenu, PauseMenu, InGameUI, InGameTimeText, InGameTimer;
     private GameObject m_Player, GC;
     MasterMovement MM;
     PlayerMovement PM;
@@ -43,13 +43,15 @@ public class MenuManager : MonoBehaviour
     }
     public void Resume()
     {
+        Time.timeScale = 1;
         PauseMenu.SetActive(false);
         PM.enabled = true;
         GameIsPaused = false;
     }
     public void NewGame()
     {
-        if(TerrainManager.Enemies != null)
+        Time.timeScale = 1;
+        if (TerrainManager.Enemies != null)
         {
             if (TerrainManager.Enemies.transform.childCount != 0)
             {
@@ -76,7 +78,9 @@ public class MenuManager : MonoBehaviour
 
         GC.transform.position = Vector3.zero;
         GC.GetComponent<GameController>().enabled = true;
+        GameController.m_Score = 0;
         GC.GetComponent<GameController>().ResetTime();
+        GC.GetComponent<GameController>().NewEnemyTurn();
         GC.GetComponent<MasterMovement>().enabled = true;
         GC.GetComponent<TerrainManager>().enabled = true;
 
@@ -90,16 +94,30 @@ public class MenuManager : MonoBehaviour
 
         PM.zPos = 0;
         PM.enabled = true;
+
+        if (GameController.GameMode == GameController.GameModes.Timer
+            || GameController.GameMode == GameController.GameModes.Stress)
+        {
+            InGameTimeText.SetActive(true);
+            InGameTimer.SetActive(true);
+        }
+        else
+        {
+            InGameTimeText.SetActive(false);
+            InGameTimer.SetActive(false);
+        }
     }
     public void Pause()
     {
+        Time.timeScale = 0;
         PauseMenu.SetActive(true);
         PM.enabled = false;
         GameIsPaused = true;
     }
     public void Restart()
     {
-        if(TerrainManager.Enemies.transform.childCount != 0)
+        Time.timeScale = 1;
+        if (TerrainManager.Enemies.transform.childCount != 0)
         {
             for (int i = 0; i < TerrainManager.Enemies.transform.childCount; i++)
             {
@@ -123,7 +141,9 @@ public class MenuManager : MonoBehaviour
 
         GC.transform.position = Vector3.zero;
         GC.GetComponent<GameController>().enabled = true;
+        GameController.m_Score = 0;
         GC.GetComponent<GameController>().ResetTime();
+        GC.GetComponent<GameController>().NewEnemyTurn();
         GC.GetComponent<MasterMovement>().enabled = true;
         GC.GetComponent<TerrainManager>().enabled = true;
 
@@ -137,10 +157,21 @@ public class MenuManager : MonoBehaviour
 
         PM.zPos = 0;
         PM.enabled = true;
+
+        if (GameController.GameMode == GameController.GameModes.Timer
+            || GameController.GameMode == GameController.GameModes.Stress)
+        {
+            InGameTimeText.SetActive(true);
+            InGameTimer.SetActive(true);
+        }
+        else
+        {
+            InGameTimeText.SetActive(false);
+            InGameTimer.SetActive(false);
+        }
     }
     public void QuitGame()
     {
         Application.Quit();
-        //Debug.Log("Adiosito");
     }
 }

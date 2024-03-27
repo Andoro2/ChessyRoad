@@ -14,10 +14,12 @@ public class GameController : MonoBehaviour
 
     public TMP_Text m_ScoreText,
         m_FinalScoreText,
-        m_TimeText;
+        m_TimerText;
 
-    public float m_MaxTime = 50f;
-    [SerializeField] static public float m_Timer;
+    public float m_MaxTime = 50f,
+        m_StressTime = 5f;
+    [SerializeField] static public float m_Timer,
+        m_StressTimer;
 
     static public int m_Score = 0;
 
@@ -28,31 +30,49 @@ public class GameController : MonoBehaviour
     public enum PlayerColors { Black, White}
     [SerializeField] static public PlayerColors PlayerColor = PlayerColors.Black;
 
-    public enum GameModes { Easy, Timer }
-    [SerializeField] public GameModes GameMode = GameModes.Easy;
+    public enum GameModes { Easy, Timer, Stress }
+    [SerializeField] static public GameModes GameMode = GameModes.Easy;
     void Start()
     {
         Time.timeScale = 1f;
         m_Player = GameObject.FindWithTag("Player").gameObject;
 
         m_Timer = m_MaxTime;
+        m_StressTimer = m_StressTime;
     }
     void Update()
     {
         Turno = Turn;
         m_ScoreText.text = m_Score.ToString();
 
-        if(GameMode == GameModes.Timer && Turn == Turns.Player
+        if (Turn == Turns.Player
             && MasterMovement.EnemiesReachedPlace())
         {
-            if(m_Timer > 0)
+            switch (GameMode)
             {
-                m_Timer -= Time.deltaTime;
-                m_TimeText.text = m_Timer.ToString("F1") + " s";
-            }
-            else
-            {
-                Death();
+                case GameModes.Timer:
+                    if (m_Timer > 0)
+                    {
+                        m_Timer -= Time.deltaTime;
+                        m_TimerText.text = m_Timer.ToString("F1") + " s";
+                    }
+                    else
+                    {
+                        Death();
+                    }
+                    break;
+                case GameModes.Stress:
+                    if(m_StressTimer > 0)
+                    {
+                        m_StressTimer -= Time.deltaTime;
+                        m_TimerText.text = m_StressTimer.ToString("F1") + " s";
+                    }
+                    else
+                    {
+                        Turn = Turns.EnemyMove;
+                        NewEnemyTurn();
+                    }
+                    break;
             }
         }
     }
@@ -89,8 +109,24 @@ public class GameController : MonoBehaviour
     {
         m_Timer = m_MaxTime;
     }
+    public void NewEnemyTurn()
+    {
+        m_StressTimer = m_StressTime;
+    }
     static public void GetTime(float BonusTime)
     {
         m_Timer += BonusTime;
+    }
+    public void SetGameModeTimer()
+    {
+        GameMode = GameModes.Timer;
+    }
+    public void SetGameModeEasy()
+    {
+        GameMode = GameModes.Easy;
+    }
+    public void SetGameModeStress()
+    {
+        GameMode = GameModes.Stress;
     }
 }

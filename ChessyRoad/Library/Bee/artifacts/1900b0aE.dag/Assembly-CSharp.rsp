@@ -362,6 +362,7 @@
 "Assets/0_Scripts/cameraFollow.cs"
 "Assets/0_Scripts/GameController.cs"
 "Assets/0_Scripts/MasterMovement.cs"
+"Assets/0_Scripts/Menus/DestroyObject.cs"
 "Assets/0_Scripts/Menus/leaderboard.cs"
 "Assets/0_Scripts/Menus/MenuManager.cs"
 "Assets/0_Scripts/Menus/saveScore.cs"

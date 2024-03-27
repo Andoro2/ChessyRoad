@@ -8,8 +8,6 @@ public class MasterMovement : MonoBehaviour
     static public List<Vector3> EnemyPositions = new List<Vector3>();
     static public GameObject[] m_Enemies;
 
-    int Iteration = 0;
-
     public bool EnemiesInPlace = true;
     private GameObject m_Player;
     void Start()
@@ -35,8 +33,6 @@ public class MasterMovement : MonoBehaviour
 
         if (GameController.Turn == GameController.Turns.EnemyMove)
         {
-            //StartCoroutine(EnemyTurn());
-
             foreach (GameObject Enemy in m_Enemies)
             {
                 if (Enemy.GetComponent<InPlaceChecker>().PieceEnabled && Enemy.transform.position != GameObject.FindWithTag("Player").gameObject.transform.position)
@@ -66,6 +62,7 @@ public class MasterMovement : MonoBehaviour
                 else
                 {
                     Enemy.GetComponent<InPlaceChecker>().PieceEnable();
+                    EnemyPositions.Add(Enemy.transform.position);
                 }
             }
             GameController.Turn = GameController.Turns.WaitForEnemy;
@@ -84,7 +81,6 @@ public class MasterMovement : MonoBehaviour
                 }
 
                 GameController.Turn = GameController.Turns.Player;
-                Iteration = 0;
             }
         }
         

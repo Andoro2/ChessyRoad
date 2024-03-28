@@ -371,6 +371,7 @@
 "Assets/0_Scripts/PeacesMovement/Bishop_AddaptZigZag.cs"
 "Assets/0_Scripts/PeacesMovement/Bishop_FullZigZag.cs"
 "Assets/0_Scripts/PeacesMovement/Bishop_Random.cs"
+"Assets/0_Scripts/PeacesMovement/HighlightSquare.cs"
 "Assets/0_Scripts/PeacesMovement/InPlaceChecker.cs"
 "Assets/0_Scripts/PeacesMovement/Knight.cs"
 "Assets/0_Scripts/PeacesMovement/Pawn.cs"

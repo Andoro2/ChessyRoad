@@ -24,7 +24,7 @@ public class MenuManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !MainMenu.activeSelf)
         {
             if (GameIsPaused)
             {
@@ -85,6 +85,7 @@ public class MenuManager : MonoBehaviour
         GC.GetComponent<TerrainManager>().enabled = true;
 
         PlayerMovement.NextPosition = Vector3.zero;
+        PlayerMovement.TargetPosition = Vector3.zero;
         m_Player.transform.position = Vector3.zero;
         m_Player.transform.rotation = Quaternion.identity;
 
@@ -148,6 +149,7 @@ public class MenuManager : MonoBehaviour
         GC.GetComponent<TerrainManager>().enabled = true;
 
         PlayerMovement.NextPosition = Vector3.zero;
+        PlayerMovement.TargetPosition = Vector3.zero;
         m_Player.transform.position = Vector3.zero;
         m_Player.transform.rotation = Quaternion.identity;
 

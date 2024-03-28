@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float m_Speed = 5f;
     public int zPos = 0;
-    [SerializeField] public static Vector3 NextPosition;
+    public Vector3 HighlightPosition;
+    public static Vector3 NextPosition, TargetPosition;
 
     public bool HasMoved = false;
 
@@ -19,64 +21,137 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1f;
+        TargetPosition = transform.position;
     }
     // Update is called once per frame
     void Update()
     {
+        HighlightPosition = TargetPosition;
         if (GameController.Turn == GameController.Turns.Player && MasterMovement.EnemiesReachedPlace())
         {
-            if (Input.GetKeyDown(KeyCode.W) && !HasMoved)
+            if(GameController.MovementStyle == GameController.MovementStyles.Fast)
             {
-                NextPosition = transform.position + new Vector3(0f, 0f, 2f);
-                if (Input.GetKeyDown(KeyCode.A))
+                if (Input.GetKeyDown(KeyCode.W) && !HasMoved)
                 {
-                    NextPosition += new Vector3(-2f, 0f, 0f);
+                    NextPosition = transform.position + new Vector3(0f, 0f, 2f);
+                    if (Input.GetKeyDown(KeyCode.A))
+                    {
+                        NextPosition += new Vector3(-2f, 0f, 0f);
+                    }
+                    else if (Input.GetKeyDown(KeyCode.D))
+                    {
+                        NextPosition += new Vector3(2f, 0f, 0f);
+                    }
+
+                    HasMoved = true;
                 }
-                else if (Input.GetKeyDown(KeyCode.D))
+                if (Input.GetKeyDown(KeyCode.S) && !HasMoved)
                 {
-                    NextPosition += new Vector3(2f, 0f, 0f);
+                    NextPosition = transform.position + new Vector3(0f, 0f, -2f);
+                    if (Input.GetKeyDown(KeyCode.A))
+                    {
+                        NextPosition += new Vector3(-2f, 0f, 0f);
+                    }
+                    else if (Input.GetKeyDown(KeyCode.D))
+                    {
+                        NextPosition += new Vector3(2f, 0f, 0f);
+                    }
+                    HasMoved = true;
+                }
+                if (Input.GetKeyDown(KeyCode.D) && !HasMoved)
+                {
+                    NextPosition = transform.position + new Vector3(2f, 0f, 0f);
+                    if (Input.GetKeyDown(KeyCode.W))
+                    {
+                        NextPosition += new Vector3(0f, 0f, 2f);
+                    }
+                    else if (Input.GetKeyDown(KeyCode.S))
+                    {
+                        NextPosition += new Vector3(0f, 0f, -2f);
+                    }
+                    HasMoved = true;
+                }
+                if (Input.GetKeyDown(KeyCode.A) && !HasMoved)
+                {
+                    NextPosition = transform.position + new Vector3(-2f, 0f, 0f);
+                    if (Input.GetKeyDown(KeyCode.W))
+                    {
+                        NextPosition += new Vector3(0f, 0f, 2f);
+                    }
+                    else if (Input.GetKeyDown(KeyCode.S))
+                    {
+                        NextPosition += new Vector3(0f, 0f, -2f);
+                    }
+                    HasMoved = true;
+                }
+            }
+
+            if (GameController.MovementStyle == GameController.MovementStyles.Slow)
+            {
+                if (Input.GetKeyDown(KeyCode.W) && TargetPosition.z <= transform.position.z + 1)
+                {
+                    DeactivateHighlights();
+                    if (TargetPosition == transform.position + Vector3.back * 2)
+                    {
+                        TargetPosition = transform.position + Vector3.forward * 2;
+                    }
+                    else
+                    {
+                        TargetPosition += Vector3.forward * 2;
+                    }
+                }
+                if (Input.GetKeyDown(KeyCode.S) && TargetPosition.z >= transform.position.z - 1)
+                {
+                    DeactivateHighlights();
+                    if(TargetPosition == transform.position + Vector3.forward * 2)
+                    {
+                        TargetPosition = transform.position + Vector3.back * 2;
+                    }
+                    else
+                    {
+                        TargetPosition += Vector3.back * 2;
+                    }
+                }
+                if (Input.GetKeyDown(KeyCode.D) && TargetPosition.x <= transform.position.x + 1)
+                {
+                    DeactivateHighlights();
+                    if (TargetPosition == transform.position + Vector3.left * 2)
+                    {
+                        TargetPosition = transform.position + Vector3.right * 2;
+                    }
+                    else
+                    {
+                        TargetPosition += Vector3.right * 2;
+                    }
+                }
+                if (Input.GetKeyDown(KeyCode.A) && TargetPosition.x >= transform.position.x - 1)
+                {
+                    DeactivateHighlights();
+                    if (TargetPosition == transform.position + Vector3.right * 2)
+                    {
+                        TargetPosition = transform.position + Vector3.left * 2;
+                    }
+                    else
+                    {
+                        TargetPosition += Vector3.left * 2;
+                    }
                 }
 
-                HasMoved = true;
-            }
-            if (Input.GetKeyDown(KeyCode.S) && !HasMoved)
-            {
-                NextPosition = transform.position + new Vector3(0f, 0f, -2f);
-                if (Input.GetKeyDown(KeyCode.A))
+                if(new Vector3(Mathf.Round(TargetPosition.x), Mathf.Round(TargetPosition.y), Mathf.Round(TargetPosition.z))
+                    != new Vector3(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y), Mathf.Round(transform.position.z)))
                 {
-                    NextPosition += new Vector3(-2f, 0f, 0f);
+                    if (MasterMovement.isObjectHere(TargetPosition))
+                    {
+                        Collider[] m_Intersecting = Physics.OverlapSphere(TargetPosition, 0.5f);
+                        if(m_Intersecting[0].gameObject.transform.parent.GetComponent<HighlightSquare>() != null) m_Intersecting[0].gameObject.transform.parent.GetComponent<HighlightSquare>().SquareHighlighted();
+                    }
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        DeactivateHighlights();
+                        NextPosition = TargetPosition;
+                        HasMoved = true;
+                    }
                 }
-                else if (Input.GetKeyDown(KeyCode.D))
-                {
-                    NextPosition += new Vector3(2f, 0f, 0f);
-                }
-                HasMoved = true;
-            }
-            if (Input.GetKeyDown(KeyCode.D) && !HasMoved)
-            {
-                NextPosition = transform.position + new Vector3(2f, 0f, 0f);
-                if (Input.GetKeyDown(KeyCode.W))
-                {
-                    NextPosition += new Vector3(0f, 0f, 2f);
-                }
-                else if (Input.GetKeyDown(KeyCode.S))
-                {
-                    NextPosition += new Vector3(0f, 0f, -2f);
-                }
-                HasMoved = true;
-            }
-            if (Input.GetKeyDown(KeyCode.A) && !HasMoved)
-            {
-                NextPosition = transform.position + new Vector3(-2f, 0f, 0f);
-                if (Input.GetKeyDown(KeyCode.W))
-                {
-                    NextPosition += new Vector3(0f, 0f, 2f);
-                }
-                else if (Input.GetKeyDown(KeyCode.S))
-                {
-                    NextPosition += new Vector3(0f, 0f, -2f);
-                }
-                HasMoved = true;
             }
 
             if (transform.position != NextPosition)
@@ -112,7 +187,6 @@ public class PlayerMovement : MonoBehaviour
                 if (GameController.GameMode == GameController.GameModes.Stress)
                 {
                     GameObject.FindWithTag("GameController").GetComponent<GameController>().NewEnemyTurn();
-                    //GameController.NewEnemyTurn();
                 }
 
                 HasMoved = false;
@@ -169,5 +243,29 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         return true;
+    }
+    void DeactivateHighlights()
+    {
+        List<Vector3> CheckPlaces = new List<Vector3>
+        {
+            transform.position,
+            new Vector3(transform.position.x, transform.position.y, transform.position.z + 2),
+            new Vector3(transform.position.x + 2, transform.position.y, transform.position.z + 2),
+            new Vector3(transform.position.x - 2, transform.position.y, transform.position.z + 2),
+            new Vector3(transform.position.x, transform.position.y, transform.position.z - 2),
+            new Vector3(transform.position.x + 2, transform.position.y, transform.position.z - 2),
+            new Vector3(transform.position.x - 2, transform.position.y, transform.position.z - 2),
+            new Vector3(transform.position.x + 2, transform.position.y, transform.position.z),
+            new Vector3(transform.position.x - 2, transform.position.y, transform.position.z)
+        };
+
+        foreach (var checkPlace in CheckPlaces)
+        {
+            if (MasterMovement.isObjectHere(checkPlace))
+            {
+                Collider[] m_Intersected = Physics.OverlapSphere(checkPlace, 0.5f);
+                m_Intersected[0].gameObject.transform.parent.GetComponent<HighlightSquare>().SquareNotSelected();
+            }
+        }
     }
 }

@@ -47,26 +47,29 @@ public class Rook_Line : MonoBehaviour
 
         List<Vector3> AvailablePositions = new List<Vector3>();
 
-        if (transform.position.z == m_Player.transform.position.z)
-        { // Si el jugador esá en la horizontal de la torre
-            bool Horizontable = true;
+        if (GameController.GameMode != GameController.GameModes.Easy)
+        {
+            if (transform.position.z == m_Player.transform.position.z)
+            { // Si el jugador esá en la horizontal de la torre
+                bool Horizontable = true;
 
-            float incrementoX = (m_Player.transform.position.x - transform.position.x > 0) ? 2 : -2;
+                float incrementoX = (m_Player.transform.position.x - transform.position.x > 0) ? 2 : -2;
 
-            for (float x = transform.position.x + incrementoX; x != m_Player.transform.position.x; x += incrementoX)
-            {
-                if (!MasterMovement.isObjectHere(new Vector3(x, 0, transform.position.z)))
+                for (float x = transform.position.x + incrementoX; x != m_Player.transform.position.x; x += incrementoX)
                 {
-                    Horizontable = false;
+                    if (!MasterMovement.isObjectHere(new Vector3(x, 0, transform.position.z)))
+                    {
+                        Horizontable = false;
+                    }
                 }
-            }
 
-            if (Horizontable && !MasterMovement.EnemyPositions.Contains(m_Player.transform.position))
-            {
-                NextPos = m_Player.transform.position;
-                MasterMovement.EnemyPositions.Add(NextPos);
+                if (Horizontable && !MasterMovement.EnemyPositions.Contains(m_Player.transform.position))
+                {
+                    NextPos = m_Player.transform.position;
+                    MasterMovement.EnemyPositions.Add(NextPos);
 
-                return NextPos;
+                    return NextPos;
+                }
             }
         }
 
@@ -89,7 +92,6 @@ public class Rook_Line : MonoBehaviour
             if (AvailablePositions.Contains(Movements[Side]))
             {
                 NextPos = Movements[Side];
-                //Side = 1;
             }
             else if (!AvailablePositions.Contains(Movements[Side]) && AvailablePositions.Contains(Movements[1]))
             {
@@ -106,7 +108,6 @@ public class Rook_Line : MonoBehaviour
             if (AvailablePositions.Contains(Movements[Side]))
             {
                 NextPos = Movements[Side];
-                //Side = 0;
             }
             else if (!AvailablePositions.Contains(Movements[Side]) && AvailablePositions.Contains(Movements[0]))
             {

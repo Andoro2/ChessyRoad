@@ -75,7 +75,7 @@ public class Knight : MonoBehaviour
         {
             foreach(Vector3 Position in AvailablePositions)
             {
-                if (Position == m_Player.transform.position)
+                if (Position == m_Player.transform.position && GameController.GameMode != GameController.GameModes.Easy)
                 {
                     NextPos = Position;
                 }

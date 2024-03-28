@@ -10,7 +10,8 @@ using UnityEngine.Rendering;
 public class GameController : MonoBehaviour
 {
     private GameObject m_Player;
-    public GameObject m_DeathMenu, m_ScoreMenu;
+    public GameObject m_DeathMenu, m_ScoreMenu,
+        m_FastImage, m_SlowImage;
 
     public TMP_Text m_ScoreText,
         m_FinalScoreText,
@@ -25,13 +26,12 @@ public class GameController : MonoBehaviour
 
     public enum Turns { Player, EnemyMove, WaitForEnemy }
     [SerializeField] static public Turns Turn = Turns.Player;
-    [SerializeField] public Turns Turno = Turns.Player;
-
     public enum PlayerColors { Black, White}
     [SerializeField] static public PlayerColors PlayerColor = PlayerColors.Black;
-
-    public enum GameModes { Easy, Timer, Stress }
-    [SerializeField] static public GameModes GameMode = GameModes.Easy;
+    public enum GameModes { Easy, Normal, Timer, Stress }
+    [SerializeField] static public GameModes GameMode = GameModes.Normal;
+    public enum MovementStyles { Slow, Fast }
+    [SerializeField] static public MovementStyles MovementStyle = MovementStyles.Slow;
     void Start()
     {
         Time.timeScale = 1f;
@@ -42,7 +42,6 @@ public class GameController : MonoBehaviour
     }
     void Update()
     {
-        Turno = Turn;
         m_ScoreText.text = m_Score.ToString();
 
         if (Turn == Turns.Player
@@ -105,6 +104,21 @@ public class GameController : MonoBehaviour
         if (Option) PlayerColor = PlayerColors.Black;
         else PlayerColor = PlayerColors.White;
     }
+    public void SetMovementStyle()
+    {
+        if (MovementStyle == MovementStyles.Slow)
+        {
+            MovementStyle = MovementStyles.Fast;
+            m_FastImage.GetComponent<Animator>().Play("FadeInFast");
+            m_SlowImage.GetComponent<Animator>().Play("FadeOutSlow");
+        }
+        else if (MovementStyle == MovementStyles.Fast)
+        {
+            MovementStyle = MovementStyles.Slow;
+            m_FastImage.GetComponent<Animator>().Play("FadeOutFast");
+            m_SlowImage.GetComponent<Animator>().Play("FadeInSlow");
+        }
+    }
     public void ResetTime()
     {
         m_Timer = m_MaxTime;
@@ -117,13 +131,17 @@ public class GameController : MonoBehaviour
     {
         m_Timer += BonusTime;
     }
-    public void SetGameModeTimer()
-    {
-        GameMode = GameModes.Timer;
-    }
     public void SetGameModeEasy()
     {
         GameMode = GameModes.Easy;
+    }
+    public void SetGameModeNormal()
+    {
+        GameMode = GameModes.Normal;
+    }
+    public void SetGameModeTimer()
+    {
+        GameMode = GameModes.Timer;
     }
     public void SetGameModeStress()
     {

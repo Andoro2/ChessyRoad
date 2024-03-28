@@ -80,6 +80,7 @@ public class MasterMovement : MonoBehaviour
                     }
                 }
 
+                PlayerMovement.TargetPosition = m_Player.transform.position;
                 GameController.Turn = GameController.Turns.Player;
             }
         }

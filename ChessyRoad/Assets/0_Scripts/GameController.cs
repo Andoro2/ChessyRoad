@@ -18,9 +18,10 @@ public class GameController : MonoBehaviour
         m_TimerText;
 
     public float m_MaxTime = 50f,
-        m_StressTime = 5f;
+        m_BulletTime = 5f,
+        m_EnemySpeed = 7.5f;
     [SerializeField] static public float m_Timer,
-        m_StressTimer;
+        m_BulletTimer, m_RivalSpeed;
 
     static public int m_Score = 0;
 
@@ -28,17 +29,18 @@ public class GameController : MonoBehaviour
     [SerializeField] static public Turns Turn = Turns.Player;
     public enum PlayerColors { Black, White}
     [SerializeField] static public PlayerColors PlayerColor = PlayerColors.Black;
-    public enum GameModes { Easy, Normal, Timer, Stress }
+    public enum GameModes { Easy, Normal, Timer, Bullet }
     [SerializeField] static public GameModes GameMode = GameModes.Normal;
     public enum MovementStyles { Slow, Fast }
-    [SerializeField] static public MovementStyles MovementStyle = MovementStyles.Slow;
+    [SerializeField] static public MovementStyles MovementStyle = MovementStyles.Fast;
     void Start()
     {
         Time.timeScale = 1f;
         m_Player = GameObject.FindWithTag("Player").gameObject;
 
         m_Timer = m_MaxTime;
-        m_StressTimer = m_StressTime;
+        m_BulletTimer = m_BulletTime;
+        m_RivalSpeed = m_EnemySpeed;
     }
     void Update()
     {
@@ -60,11 +62,11 @@ public class GameController : MonoBehaviour
                         Death();
                     }
                     break;
-                case GameModes.Stress:
-                    if(m_StressTimer > 0)
+                case GameModes.Bullet:
+                    if(m_BulletTimer > 0)
                     {
-                        m_StressTimer -= Time.deltaTime;
-                        m_TimerText.text = m_StressTimer.ToString("F1") + " s";
+                        m_BulletTimer -= Time.deltaTime;
+                        m_TimerText.text = m_BulletTimer.ToString("F1") + " s";
                     }
                     else
                     {
@@ -125,7 +127,7 @@ public class GameController : MonoBehaviour
     }
     public void NewEnemyTurn()
     {
-        m_StressTimer = m_StressTime;
+        m_BulletTimer = m_BulletTime;
     }
     static public void GetTime(float BonusTime)
     {
@@ -143,8 +145,8 @@ public class GameController : MonoBehaviour
     {
         GameMode = GameModes.Timer;
     }
-    public void SetGameModeStress()
+    public void SetGameModeBullet()
     {
-        GameMode = GameModes.Stress;
+        GameMode = GameModes.Bullet;
     }
 }

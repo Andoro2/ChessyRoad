@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Bishop_FullZigZag : MonoBehaviour
 {
-    public float m_Speed = 5f;
-    public int Side;
+    //public float m_Speed = 5f;
+    private int Side;
 
     public Vector3 m_NextPos;
 
@@ -33,7 +33,7 @@ public class Bishop_FullZigZag : MonoBehaviour
         else
         {
             InPlace = false;
-            transform.position = Vector3.MoveTowards(transform.position, m_NextPos, m_Speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, m_NextPos, GameController.m_RivalSpeed * Time.deltaTime);
         }
 
         if (transform.position.y < -5f) Destroy(gameObject);

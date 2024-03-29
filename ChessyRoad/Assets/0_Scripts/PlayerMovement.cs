@@ -31,57 +31,76 @@ public class PlayerMovement : MonoBehaviour
         {
             if(GameController.MovementStyle == GameController.MovementStyles.Fast)
             {
-                if (Input.GetKeyDown(KeyCode.W) && !HasMoved)
+                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Keypad8) && !HasMoved)
                 {
                     NextPosition = transform.position + new Vector3(0f, 0f, 2f);
-                    if (Input.GetKeyDown(KeyCode.A))
+                    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
                     {
                         NextPosition += new Vector3(-2f, 0f, 0f);
                     }
-                    else if (Input.GetKeyDown(KeyCode.D))
+                    else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
                     {
                         NextPosition += new Vector3(2f, 0f, 0f);
                     }
-
                     HasMoved = true;
                 }
-                if (Input.GetKeyDown(KeyCode.S) && !HasMoved)
+                if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.Keypad2) && !HasMoved)
                 {
                     NextPosition = transform.position + new Vector3(0f, 0f, -2f);
-                    if (Input.GetKeyDown(KeyCode.A))
+                    if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
                     {
                         NextPosition += new Vector3(-2f, 0f, 0f);
                     }
-                    else if (Input.GetKeyDown(KeyCode.D))
+                    else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
                     {
                         NextPosition += new Vector3(2f, 0f, 0f);
                     }
                     HasMoved = true;
                 }
-                if (Input.GetKeyDown(KeyCode.D) && !HasMoved)
+                if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Keypad6) && !HasMoved)
                 {
                     NextPosition = transform.position + new Vector3(2f, 0f, 0f);
-                    if (Input.GetKeyDown(KeyCode.W))
+                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
                     {
                         NextPosition += new Vector3(0f, 0f, 2f);
                     }
-                    else if (Input.GetKeyDown(KeyCode.S))
+                    else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
                     {
                         NextPosition += new Vector3(0f, 0f, -2f);
                     }
                     HasMoved = true;
                 }
-                if (Input.GetKeyDown(KeyCode.A) && !HasMoved)
+                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Keypad4) && !HasMoved)
                 {
                     NextPosition = transform.position + new Vector3(-2f, 0f, 0f);
-                    if (Input.GetKeyDown(KeyCode.W))
+                    if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
                     {
                         NextPosition += new Vector3(0f, 0f, 2f);
                     }
-                    else if (Input.GetKeyDown(KeyCode.S))
+                    else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
                     {
                         NextPosition += new Vector3(0f, 0f, -2f);
                     }
+                    HasMoved = true;
+                }
+                if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Keypad7) && !HasMoved)
+                {
+                    NextPosition = transform.position + new Vector3(-2f, 0f, 2f);
+                    HasMoved = true;
+                }
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Keypad9) && !HasMoved)
+                {
+                    NextPosition = transform.position + new Vector3(2f, 0f, 2f);
+                    HasMoved = true;
+                }
+                if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Keypad1) && !HasMoved)
+                {
+                    NextPosition = transform.position + new Vector3(-2f, 0f, -2f);
+                    HasMoved = true;
+                }
+                if (Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.Keypad3) && !HasMoved)
+                {
+                    NextPosition = transform.position + new Vector3(2f, 0f, -2f);
                     HasMoved = true;
                 }
             }
@@ -184,7 +203,7 @@ public class PlayerMovement : MonoBehaviour
                     Mathf.Round(transform.position.z));
                 GameController.Turn = GameController.Turns.EnemyMove;
 
-                if (GameController.GameMode == GameController.GameModes.Stress)
+                if (GameController.GameMode == GameController.GameModes.Bullet)
                 {
                     GameObject.FindWithTag("GameController").GetComponent<GameController>().NewEnemyTurn();
                 }

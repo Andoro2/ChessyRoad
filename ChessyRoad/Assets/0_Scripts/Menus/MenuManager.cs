@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +8,10 @@ public class MenuManager : MonoBehaviour
 {
     //Pause Menu
     public static bool GameIsPaused = false;
-    public GameObject MainMenu, PauseMenu, InGameUI, InGameTimeText, InGameTimer;
+    public GameObject MainMenu, PauseMenu, DeathMenu, InGameUI, InGameTimeText, InGameTimer;
+    public TextMeshProUGUI m_ExplanationText;
+    [TextArea(3, 10)]
+    public string m_EasyExplanation, m_NormalExplanation, m_TimerExplanation, m_BulletExplanation;
     private GameObject m_Player, GC;
     MasterMovement MM;
     PlayerMovement PM;
@@ -24,7 +28,7 @@ public class MenuManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !MainMenu.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Escape) && !MainMenu.activeSelf && !DeathMenu.activeSelf)
         {
             if (GameIsPaused)
             {
@@ -34,6 +38,35 @@ public class MenuManager : MonoBehaviour
             {
                 Pause();
             }
+        }
+        switch(GameController.GameMode)
+        {
+            case GameController.GameModes.Easy:
+            {
+                m_ExplanationText.text = m_EasyExplanation;
+                break;
+            }
+            case GameController.GameModes.Normal:
+            {
+                m_ExplanationText.text = m_NormalExplanation;
+                break;
+            }
+            case GameController.GameModes.Timer:
+            {
+                m_ExplanationText.text = m_TimerExplanation;
+                break;
+            }
+            case GameController.GameModes.Bullet:
+            {
+                m_ExplanationText.text = m_BulletExplanation;
+                break;
+            }
+        }
+        if (DeathMenu.activeSelf && Input.GetKeyDown(KeyCode.Space))
+        {
+            Restart();
+            DeathMenu.SetActive(false);
+            InGameUI.SetActive(true);
         }
     }
     public void Main()
@@ -97,7 +130,7 @@ public class MenuManager : MonoBehaviour
         PM.enabled = true;
 
         if (GameController.GameMode == GameController.GameModes.Timer
-            || GameController.GameMode == GameController.GameModes.Stress)
+            || GameController.GameMode == GameController.GameModes.Bullet)
         {
             InGameTimeText.SetActive(true);
             InGameTimer.SetActive(true);
@@ -161,7 +194,7 @@ public class MenuManager : MonoBehaviour
         PM.enabled = true;
 
         if (GameController.GameMode == GameController.GameModes.Timer
-            || GameController.GameMode == GameController.GameModes.Stress)
+            || GameController.GameMode == GameController.GameModes.Bullet)
         {
             InGameTimeText.SetActive(true);
             InGameTimer.SetActive(true);

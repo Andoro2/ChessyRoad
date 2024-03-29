@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Rook_Line : MonoBehaviour
 {
-    public float m_Speed = 5;
-    public int Side;
+    //public float m_Speed = 5;
+    private int Side;
 
     public Vector3 m_NextPos;
 
@@ -31,7 +31,7 @@ public class Rook_Line : MonoBehaviour
         else
         {
             InPlace = false;
-            transform.position = Vector3.MoveTowards(transform.position, m_NextPos, m_Speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, m_NextPos, GameController.m_RivalSpeed * Time.deltaTime);
         }
 
         if (transform.position.y < -5f) Destroy(gameObject);

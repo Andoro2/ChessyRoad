@@ -1,243 +1,279 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1711634601733533, "dur":72448, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711634601805987, "dur":153, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711634601806207, "dur":274, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711634601806652, "dur":102, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ARModule.dll_17F710D657B7092B.mvfrm" }}
-,{ "pid":12345, "tid":0, "ts":1711634601806921, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_D53ED3219C83DCD7.mvfrm" }}
-,{ "pid":12345, "tid":0, "ts":1711634601807035, "dur":97, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_1D4AA118B90C5E31.mvfrm" }}
-,{ "pid":12345, "tid":0, "ts":1711634601807416, "dur":98, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_868013DDA5541091.mvfrm" }}
-,{ "pid":12345, "tid":0, "ts":1711634601807664, "dur":70, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_15DE57B94DAE42B8.mvfrm" }}
-,{ "pid":12345, "tid":0, "ts":1711634601807808, "dur":87, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PropertiesModule.dll_F4344849CBE7F64D.mvfrm" }}
-,{ "pid":12345, "tid":0, "ts":1711634601808010, "dur":87, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_B0257B9B7A6C278B.mvfrm" }}
-,{ "pid":12345, "tid":0, "ts":1711634601808255, "dur":91, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_70D793384060E44C.mvfrm" }}
-,{ "pid":12345, "tid":0, "ts":1711634601808904, "dur":86, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_6EC7B4CF46E088F1.mvfrm" }}
-,{ "pid":12345, "tid":0, "ts":1711634601811229, "dur":87, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aP.dag/UnityEngine.TestRunner.dll.mvfrm.rsp" }}
-,{ "pid":12345, "tid":0, "ts":1711634601806500, "dur":5896, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711634601812398, "dur":13087673, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711634614900073, "dur":273, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711634614900476, "dur":1187, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1711634601807175, "dur":5264, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601812445, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_02FD3E58D64ED27C.mvfrm" }}
-,{ "pid":12345, "tid":1, "ts":1711634601812705, "dur":206, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601813097, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601813216, "dur":391, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601813630, "dur":416, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601814066, "dur":443, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601814529, "dur":454, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601815006, "dur":931, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601815942, "dur":35197, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601851151, "dur":1130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601852291, "dur":1275, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601853579, "dur":1297, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601854884, "dur":1319, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601856210, "dur":143, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601856353, "dur":143, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601856496, "dur":183, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601856680, "dur":214, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601856894, "dur":198, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601857093, "dur":414, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601857508, "dur":335, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634601876027, "dur":19605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711634601895691, "dur":65403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":1, "ts":1711634601961101, "dur":11593869, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1711634613554972, "dur":1345116, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601807040, "dur":5364, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601812408, "dur":747, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601813183, "dur":282, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601813486, "dur":458, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601813966, "dur":433, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601814419, "dur":430, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601814922, "dur":312, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601815249, "dur":34531, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601849791, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.dll.mvfrm" }}
-,{ "pid":12345, "tid":2, "ts":1711634601849856, "dur":1464, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601851372, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.4f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\\mscorlib.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711634601851533, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.4f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\\System.ServiceModel.Web.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711634601851370, "dur":1931, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.dll (+2 others)" }}
-,{ "pid":12345, "tid":2, "ts":1711634601853301, "dur":4448, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601857783, "dur":242, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601858036, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Core.dll.mvfrm" }}
-,{ "pid":12345, "tid":2, "ts":1711634601858141, "dur":454, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601858603, "dur":3752, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Core.dll (+2 others)" }}
-,{ "pid":12345, "tid":2, "ts":1711634601862356, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601862550, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601862808, "dur":2292, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Flow.dll (+2 others)" }}
-,{ "pid":12345, "tid":2, "ts":1711634601865100, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601865289, "dur":161, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601865537, "dur":232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.dll (+2 others)" }}
-,{ "pid":12345, "tid":2, "ts":1711634601865769, "dur":202, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601865981, "dur":174, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1711634601885703, "dur":21995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":2, "ts":1711634601907749, "dur":54078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.pdb" }}
-,{ "pid":12345, "tid":2, "ts":1711634601961831, "dur":12938231, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601807466, "dur":5009, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601812479, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_C5420FA795D6901B.mvfrm" }}
-,{ "pid":12345, "tid":3, "ts":1711634601812653, "dur":87, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634601812650, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_6E51FD9DC18C0322.mvfrm" }}
-,{ "pid":12345, "tid":3, "ts":1711634601812745, "dur":459, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601813226, "dur":439, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601813685, "dur":434, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601814142, "dur":429, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601814631, "dur":413, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601815064, "dur":897, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601815972, "dur":34618, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601850654, "dur":2479, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601853149, "dur":1238, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601854401, "dur":1441, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601875488, "dur":761, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.rsp" }}
-,{ "pid":12345, "tid":3, "ts":1711634601876930, "dur":6777, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\1900b0aP.dag\\Assembly-CSharp.rsp" }}
-,{ "pid":12345, "tid":3, "ts":1711634601876253, "dur":7456, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.dll (+2 others)" }}
-,{ "pid":12345, "tid":3, "ts":1711634601883966, "dur":62, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1711634601884045, "dur":11595500, "ph":"X", "name": "Csc",  "args": { "detail":"Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.dll (+2 others)" }}
-,{ "pid":12345, "tid":3, "ts":1711634613481147, "dur":72825, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\1900b0aP.dag\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634613481145, "dur":72829, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634613553996, "dur":957, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634613554976, "dur":86063, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634613641041, "dur":125944, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\lootlocker.lootlockersdk.runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634613766987, "dur":97, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634613767085, "dur":147812, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634613914898, "dur":51718, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634613966617, "dur":54727, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634614021346, "dur":64929, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634614086277, "dur":31649, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634614117928, "dur":69590, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.TestRunner.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634614187520, "dur":88699, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1711634613554969, "dur":721258, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"BuildPlayerDataGenerator Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)" }}
-,{ "pid":12345, "tid":3, "ts":1711634614276336, "dur":623633, "ph":"X", "name": "BuildPlayerDataGenerator",  "args": { "detail":"Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)" }}
-,{ "pid":12345, "tid":4, "ts":1711634601807161, "dur":5267, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601812449, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711634601812432, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_DFA852A221A1D08A.mvfrm" }}
-,{ "pid":12345, "tid":4, "ts":1711634601812635, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601812729, "dur":51, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711634601812727, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_CFB10F0E61FA36C0.mvfrm" }}
-,{ "pid":12345, "tid":4, "ts":1711634601812782, "dur":384, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601813197, "dur":353, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601813579, "dur":419, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601814020, "dur":437, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601814486, "dur":430, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601814943, "dur":917, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601815871, "dur":35023, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601850912, "dur":409, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601851351, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601851447, "dur":2528, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601853981, "dur":1278, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601855267, "dur":1380, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601856654, "dur":259, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601856913, "dur":227, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601857140, "dur":474, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601857615, "dur":304, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601857920, "dur":205, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601858126, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aP.dag/Unity.Timeline.dll.mvfrm" }}
-,{ "pid":12345, "tid":4, "ts":1711634601858179, "dur":711, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601858898, "dur":293, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/Unity.Timeline.dll (+2 others)" }}
-,{ "pid":12345, "tid":4, "ts":1711634601859192, "dur":1316, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601860515, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1711634601881338, "dur":22471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711634601903871, "dur":49904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1711634601953836, "dur":8047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/UnityEngine.TestRunner.pdb" }}
-,{ "pid":12345, "tid":4, "ts":1711634601961885, "dur":12938204, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601807265, "dur":5185, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601812465, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_D7DAD1F043245E36.mvfrm" }}
-,{ "pid":12345, "tid":5, "ts":1711634601812725, "dur":249, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601812998, "dur":355, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601813383, "dur":385, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601813790, "dur":444, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601814268, "dur":418, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601814710, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601814801, "dur":388, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601815204, "dur":34530, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601849750, "dur":3423, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601853192, "dur":1285, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601854500, "dur":1152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601855660, "dur":1307, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601856976, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aP.dag/UnityEngine.TestRunner.dll.mvfrm" }}
-,{ "pid":12345, "tid":5, "ts":1711634601857121, "dur":456, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601857577, "dur":286, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601876296, "dur":37697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1711634601914005, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634601914088, "dur":41177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1711634601955549, "dur":11525638, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1711634613481191, "dur":108, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\1900b0aP.dag\\Assembly-CSharp.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1711634613481190, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1711634613481317, "dur":880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb" }}
-,{ "pid":12345, "tid":5, "ts":1711634613482201, "dur":1417867, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601807109, "dur":5304, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601812455, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711634601812430, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_1AD2E1FD48B40F9E.mvfrm" }}
-,{ "pid":12345, "tid":6, "ts":1711634601812724, "dur":328, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601813086, "dur":314, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601813479, "dur":401, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601813910, "dur":439, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601814374, "dur":16280, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601830719, "dur":20236, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601850965, "dur":924, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601851900, "dur":1452, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601853361, "dur":1385, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601854755, "dur":1285, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601856068, "dur":1055, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601857199, "dur":204, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.4f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\\System.Diagnostics.Contracts.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711634601857129, "dur":854, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/UnityEngine.TestRunner.dll (+2 others)" }}
-,{ "pid":12345, "tid":6, "ts":1711634601857984, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601858048, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aP.dag/Unity.AI.Navigation.dll.mvfrm" }}
-,{ "pid":12345, "tid":6, "ts":1711634601858137, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601858320, "dur":220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/Unity.AI.Navigation.dll (+2 others)" }}
-,{ "pid":12345, "tid":6, "ts":1711634601858540, "dur":1701, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601860252, "dur":232, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1711634601876601, "dur":141491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":6, "ts":1711634602018098, "dur":12881972, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601807353, "dur":5109, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601812467, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_B0257B9B7A6C278B.mvfrm" }}
-,{ "pid":12345, "tid":7, "ts":1711634601812553, "dur":50, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_B0257B9B7A6C278B.mvfrm" }}
-,{ "pid":12345, "tid":7, "ts":1711634601812632, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601812871, "dur":387, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601813290, "dur":418, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601813731, "dur":458, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601814212, "dur":429, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601814665, "dur":441, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601815147, "dur":34522, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601849699, "dur":3101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601852815, "dur":1339, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601854164, "dur":1319, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601855491, "dur":1309, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601856807, "dur":304, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601857112, "dur":384, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601857496, "dur":398, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601857894, "dur":205, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601858100, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aP.dag/Unity.TextMeshPro.dll.mvfrm" }}
-,{ "pid":12345, "tid":7, "ts":1711634601858206, "dur":966, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601859179, "dur":260, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/Unity.TextMeshPro.dll (+2 others)" }}
-,{ "pid":12345, "tid":7, "ts":1711634601859439, "dur":1136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601860592, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1711634601885425, "dur":18406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":7, "ts":1711634601903898, "dur":102710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.pdb" }}
-,{ "pid":12345, "tid":7, "ts":1711634602006612, "dur":12893435, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601807519, "dur":4968, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601812553, "dur":106, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_8839AB22D5F82F84.mvfrm" }}
-,{ "pid":12345, "tid":8, "ts":1711634601812723, "dur":383, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601813140, "dur":739, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601813905, "dur":385, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601814311, "dur":453, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601814789, "dur":490, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601815305, "dur":34446, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601849784, "dur":4009, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601853962, "dur":1112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601855085, "dur":1298, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601856390, "dur":179, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601856569, "dur":187, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601856756, "dur":259, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601857016, "dur":425, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601857442, "dur":275, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601857717, "dur":286, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601858003, "dur":202, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601858250, "dur":1205, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601859463, "dur":244, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aP.dag/lootlocker.lootlockersdk.runtime.dll (+2 others)" }}
-,{ "pid":12345, "tid":8, "ts":1711634601859708, "dur":908, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1711634601881064, "dur":22751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/lootlocker.lootlockersdk.runtime.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711634601903868, "dur":19699, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/UnityEngine.TestRunner.dll" }}
-,{ "pid":12345, "tid":8, "ts":1711634601923617, "dur":1334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/lootlocker.lootlockersdk.runtime.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1711634601924998, "dur":2007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1711634601927049, "dur":14744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.Timeline.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1711634601941881, "dur":89185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.pdb" }}
-,{ "pid":12345, "tid":8, "ts":1711634602031072, "dur":12868979, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1711634614904754, "dur":29765, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1711726618420787, "dur":35169, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1711726618455960, "dur":130, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1711726618456124, "dur":243, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1711726618456716, "dur":59, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":0, "ts":1711726618456807, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/level0" }}
+,{ "pid":12345, "tid":0, "ts":1711726618456921, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/resources.assets" }}
+,{ "pid":12345, "tid":0, "ts":1711726618456978, "dur":100, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1711726618457270, "dur":98, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":0, "ts":1711726618457557, "dur":78, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1711726618457773, "dur":107, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1711726618457947, "dur":70, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1711726618458092, "dur":86, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1711726618458347, "dur":71, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1711726618458422, "dur":76, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1711726618458934, "dur":71, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1711726618459912, "dur":98, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":0, "ts":1711726618456389, "dur":5443, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1711726618461834, "dur":1521696, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1711726619983531, "dur":164, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1711726619983695, "dur":55, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1711726619983861, "dur":99977, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1711726618456975, "dur":4868, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1711726618461847, "dur":1958, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1711726618488880, "dur":65460, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":1, "ts":1711726618554352, "dur":251, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1711726618554633, "dur":4134, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1711726618558768, "dur":68, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1711726618559004, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618559077, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618559140, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618559191, "dur":377, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618559569, "dur":187, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618559757, "dur":255, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618560013, "dur":152, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\lootlocker.lootlockersdk.runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618560166, "dur":119, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618560286, "dur":245, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618560532, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Users\\Usuario\\Desktop\\ChessyRoad\\ChessyRoad\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726618560631, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player2e1eb297-inputdata.json" }}
+,{ "pid":12345, "tid":1, "ts":1711726618554348, "dur":6402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1711726618561233, "dur":347818, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1711726618934946, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1711726618934945, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1711726618935052, "dur":1058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1711726618936124, "dur":267, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1711726618936430, "dur":70435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619006921, "dur":755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619007694, "dur":15562, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1711726619023311, "dur":1093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619024464, "dur":1007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619025523, "dur":1058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619026620, "dur":993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619027654, "dur":629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619028338, "dur":576926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619605287, "dur":540, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1711726619605914, "dur":18278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619624283, "dur":4148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619628458, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1711726619628557, "dur":3626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619632288, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1711726619632366, "dur":119, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1711726619632491, "dur":4201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619636717, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1711726619636813, "dur":71401, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1711726619708301, "dur":269306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1711726619977649, "dur":5464, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1711726619983138, "dur":384, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726618457421, "dur":4468, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726618461893, "dur":349, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726618462242, "dur":1564, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726618463862, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726618483958, "dur":56346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1711726618540384, "dur":36731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1711726618577542, "dur":8088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1711726618585707, "dur":59531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1711726618645377, "dur":255936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1711726618901443, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726618901569, "dur":105149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1711726619006742, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726619006813, "dur":598404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1711726619605243, "dur":678, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726619605959, "dur":18058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1711726619624104, "dur":2880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1711726619627014, "dur":1360, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726619628409, "dur":3377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1711726619631908, "dur":2976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1711726619634918, "dur":373, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726619635314, "dur":2095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1711726619637493, "dur":71143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1711726619981876, "dur":275, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1711726619708670, "dur":273492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1711726619982186, "dur":1330, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726618457176, "dur":4692, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726618461871, "dur":304, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726618462175, "dur":98, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726618462273, "dur":1538, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726618463838, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726618483419, "dur":113013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1711726618596743, "dur":39977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1711726618901242, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726618636786, "dur":264540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1711726618901581, "dur":5037, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad.exe" }}
+,{ "pid":12345, "tid":3, "ts":1711726618906675, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726618906787, "dur":99733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1711726619006613, "dur":893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1711726619007548, "dur":16640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1711726619024232, "dur":581105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1711726619605366, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726619605490, "dur":18107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1711726619623628, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726619626201, "dur":105, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726619623779, "dur":2543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1711726619626366, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726619626433, "dur":3299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1711726619629770, "dur":166, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726619629964, "dur":4594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1711726619634603, "dur":335, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1711726619634966, "dur":2876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1711726619637907, "dur":71549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1711726619709490, "dur":272577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/level0.resS" }}
+,{ "pid":12345, "tid":3, "ts":1711726619982085, "dur":1435, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726618457023, "dur":4831, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726618461862, "dur":337, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726618462200, "dur":1610, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726618483439, "dur":71368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1711726618556324, "dur":345116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1711726618901633, "dur":177, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726618903016, "dur":120727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1711726619023829, "dur":581855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":4, "ts":1711726619605758, "dur":18000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1711726619623782, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726619623983, "dur":2436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1711726619626444, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726619626559, "dur":4128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1711726619630705, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726619630776, "dur":2714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1711726619633510, "dur":326, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726619633859, "dur":5334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1711726619639234, "dur":68902, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726619708155, "dur":423, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1711726619708582, "dur":273499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":4, "ts":1711726619982106, "dur":1418, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1711726618457301, "dur":4576, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1711726618461881, "dur":333, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1711726618462215, "dur":1621, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1711726618463851, "dur":75243, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":5, "ts":1711726618463837, "dur":75259, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1711726618539218, "dur":88830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1711726618628141, "dur":33687, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1711726618661848, "dur":33643, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Unity\\2022.3.4f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1711726618661846, "dur":33647, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1711726618695994, "dur":364979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1711726619061033, "dur":544236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":5, "ts":1711726619605288, "dur":360, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1711726619605658, "dur":79, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1711726619605741, "dur":18000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1711726619623945, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1711726619624058, "dur":2544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1711726619626623, "dur":188, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1711726619626883, "dur":6522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1711726619633468, "dur":373, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1711726619633893, "dur":3083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1711726619637076, "dur":71486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1711726619708648, "dur":273073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1711726619981742, "dur":1786, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726618457806, "dur":4104, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726618461914, "dur":355, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726618462269, "dur":1538, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726618464453, "dur":77942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1711726618542442, "dur":11375, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726618553893, "dur":23417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1711726618577611, "dur":74869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1711726618652719, "dur":249171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1711726618901915, "dur":1075, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726618903373, "dur":103144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1711726619006625, "dur":597195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1711726619603841, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726619604043, "dur":1559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1711726619605624, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726619605704, "dur":17988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1711726619623717, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726619626272, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726619623889, "dur":2538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1711726619626512, "dur":4037, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1711726619630622, "dur":1972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1711726619632630, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726619632715, "dur":5147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1711726619981428, "dur":135, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1711726619638290, "dur":343379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1711726619981781, "dur":1410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1711726619983204, "dur":309, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726618457507, "dur":4391, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726618461902, "dur":368, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726618462270, "dur":1567, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726618463865, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726618901606, "dur":194, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726618483975, "dur":417842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1711726618901844, "dur":1143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726618903328, "dur":4297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726618907704, "dur":29047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726618936868, "dur":69724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726619006653, "dur":596848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726619603550, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726619603633, "dur":1453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726619605107, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726619605287, "dur":18258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726619623570, "dur":229, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726619623847, "dur":2300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726619626173, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726619626247, "dur":106, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726619626357, "dur":3968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726619630354, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726619634087, "dur":53, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726619630480, "dur":3820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726619634343, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1711726619634500, "dur":3065, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726619637655, "dur":289940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":7, "ts":1711726619927644, "dur":55052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/level0" }}
+,{ "pid":12345, "tid":7, "ts":1711726619982713, "dur":801, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726618457877, "dur":4043, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726618461921, "dur":303, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726618462224, "dur":1585, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726618463862, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726618488828, "dur":96547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":8, "ts":1711726618585481, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726618585622, "dur":11802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1711726618598063, "dur":481798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1711726619079934, "dur":992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619080991, "dur":677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619081718, "dur":796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619082568, "dur":757, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619083375, "dur":590, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619084005, "dur":608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/lootlocker.lootlockersdk.runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619084655, "dur":948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619085642, "dur":1083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619086780, "dur":165957, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619252819, "dur":625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619253477, "dur":1096, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619254597, "dur":852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619255492, "dur":717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619256271, "dur":644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619256971, "dur":946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619257964, "dur":2566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619260592, "dur":609, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619261246, "dur":599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619261909, "dur":901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619262853, "dur":581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619263485, "dur":568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619264095, "dur":576, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619264726, "dur":1329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619266101, "dur":553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619266693, "dur":559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619267292, "dur":560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619267907, "dur":823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619268769, "dur":553, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619269382, "dur":1042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619270465, "dur":989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619271501, "dur":892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619272473, "dur":595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619273144, "dur":7474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619280664, "dur":742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619281454, "dur":319561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619601152, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726619601358, "dur":3295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619604689, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726619604792, "dur":18629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619623461, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726619623542, "dur":2196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619625771, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726619625933, "dur":4127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619630085, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726619630218, "dur":2517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619632818, "dur":3385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619636289, "dur":1840, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1711726619638196, "dur":343148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":8, "ts":1711726619981803, "dur":327, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1711726619982137, "dur":1337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/Usuario/Desktop/ChessyRoad/ChessyBuild/ChessyRoad_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":0, "ts":1711726620553312, "dur":990, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

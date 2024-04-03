@@ -15,7 +15,7 @@ public class MenuManager : MonoBehaviour
     private GameObject m_Player, GC;
     MasterMovement MM;
     PlayerMovement PM;
-    TerrainManager TM;
+    //TerrainManager TM;
 
     public GameObject UpLeftButton, UpButton, UpRightButton,
         LeftButton, RightButton,
@@ -27,7 +27,7 @@ public class MenuManager : MonoBehaviour
 
         GC = GameObject.FindWithTag("GameController");
         MM = GC.GetComponent<MasterMovement>();
-        TM = GC.GetComponent<TerrainManager>();
+        //TM = GC.GetComponent<TerrainManager>();
     }
 
     void Update()
@@ -184,7 +184,6 @@ public class MenuManager : MonoBehaviour
         }
 
         if (!m_Player.transform.GetChild(0).gameObject.activeSelf) m_Player.transform.GetChild(0).gameObject.SetActive(true);
-        //if (!m_Player.transform.GetChild(1).gameObject.activeSelf) m_Player.transform.GetChild(1).gameObject.SetActive(true);
 
         GC.transform.position = Vector3.zero;
         GC.GetComponent<GameController>().enabled = true;

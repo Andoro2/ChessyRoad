@@ -47,23 +47,31 @@ public class Rook_Line : MonoBehaviour
 
         List<Vector3> AvailablePositions = new List<Vector3>();
 
-        if (GameController.GameMode != GameController.GameModes.Easy)
-        {
-            if (transform.position.z == m_Player.transform.position.z)
-            { // Si el jugador esá en la horizontal de la torre
-                bool Horizontable = true;
+        if (transform.position.z == m_Player.transform.position.z)
+        { // Si el jugador esá en la horizontal de la torre
+            bool Horizontable = true;
 
-                float incrementoX = (m_Player.transform.position.x - transform.position.x > 0) ? 2 : -2;
+            float incrementoX = (m_Player.transform.position.x - transform.position.x > 0) ? 2 : -2;
 
-                for (float x = transform.position.x + incrementoX; x != m_Player.transform.position.x; x += incrementoX)
+            for (float x = transform.position.x + incrementoX; x != m_Player.transform.position.x; x += incrementoX)
+            {
+                if (!MasterMovement.isObjectHere(new Vector3(x, 0, transform.position.z)))
                 {
-                    if (!MasterMovement.isObjectHere(new Vector3(x, 0, transform.position.z)))
-                    {
-                        Horizontable = false;
-                    }
+                    Horizontable = false;
                 }
+            }
 
-                if (Horizontable && !MasterMovement.EnemyPositions.Contains(m_Player.transform.position))
+            if (Horizontable && !MasterMovement.EnemyPositions.Contains(m_Player.transform.position))
+            {
+                if (GameController.GameMode != GameController.GameModes.Easy)
+                {
+                    NextPos = m_Player.transform.position;
+                    MasterMovement.EnemyPositions.Add(NextPos);
+
+                    return NextPos;
+                }
+                else if (GameController.GameMode == GameController.GameModes.Easy
+                    && Mathf.Abs(transform.position.z - m_Player.transform.position.z) <= 2)
                 {
                     NextPos = m_Player.transform.position;
                     MasterMovement.EnemyPositions.Add(NextPos);

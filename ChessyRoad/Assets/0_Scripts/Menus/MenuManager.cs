@@ -16,6 +16,10 @@ public class MenuManager : MonoBehaviour
     MasterMovement MM;
     PlayerMovement PM;
     TerrainManager TM;
+
+    public GameObject UpLeftButton, UpButton, UpRightButton,
+        LeftButton, RightButton,
+        DownLeftButton, DownButton, DownRightButton;
     void Start()
     {
         m_Player = GameObject.FindWithTag("Player");
@@ -140,6 +144,15 @@ public class MenuManager : MonoBehaviour
             InGameTimeText.SetActive(false);
             InGameTimer.SetActive(false);
         }
+
+        UpLeftButton.SetActive(true);
+        UpButton.SetActive(true);
+        UpRightButton.SetActive(true);
+        LeftButton.SetActive(true);
+        RightButton.SetActive(true);
+        DownLeftButton.SetActive(true);
+        DownButton.SetActive(true);
+        DownRightButton.SetActive(true);
     }
     public void Pause()
     {
@@ -204,6 +217,15 @@ public class MenuManager : MonoBehaviour
             InGameTimeText.SetActive(false);
             InGameTimer.SetActive(false);
         }
+
+        UpLeftButton.SetActive(true);
+        UpButton.SetActive(true);
+        UpRightButton.SetActive(true);
+        LeftButton.SetActive(true);
+        RightButton.SetActive(true);
+        DownLeftButton.SetActive(true);
+        DownButton.SetActive(true);
+        DownRightButton.SetActive(true);
     }
     public void QuitGame()
     {

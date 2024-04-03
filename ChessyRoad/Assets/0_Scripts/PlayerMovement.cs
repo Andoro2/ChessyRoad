@@ -18,12 +18,15 @@ public class PlayerMovement : MonoBehaviour
         "Rook", "Knight", "BishopRandom", "BishopZigZag", "BishopFullZigZag", "Pawn"
     };
 
+    public GameObject UpLeftButton, UpButton, UpRightButton,
+        LeftButton, RightButton,
+        DownLeftButton, DownButton, DownRightButton;
+
     private void Start()
     {
         Time.timeScale = 1f;
         TargetPosition = transform.position;
     }
-    // Update is called once per frame
     void Update()
     {
         HighlightPosition = TargetPosition;
@@ -43,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
                         NextPosition += new Vector3(2f, 0f, 0f);
                     }
                     HasMoved = true;
+
+                    if(UpButton.activeSelf) UpButton.SetActive(false);
                 }
                 if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.Keypad2) && !HasMoved)
                 {
@@ -56,6 +61,8 @@ public class PlayerMovement : MonoBehaviour
                         NextPosition += new Vector3(2f, 0f, 0f);
                     }
                     HasMoved = true;
+
+                    if (DownButton.activeSelf) DownButton.SetActive(false);
                 }
                 if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Keypad6) && !HasMoved)
                 {
@@ -69,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
                         NextPosition += new Vector3(0f, 0f, -2f);
                     }
                     HasMoved = true;
+
+                    if (RightButton.activeSelf) RightButton.SetActive(false);
                 }
                 if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.Keypad4) && !HasMoved)
                 {
@@ -82,26 +91,36 @@ public class PlayerMovement : MonoBehaviour
                         NextPosition += new Vector3(0f, 0f, -2f);
                     }
                     HasMoved = true;
+
+                    if (LeftButton.activeSelf) LeftButton.SetActive(false);
                 }
                 if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Keypad7) && !HasMoved)
                 {
                     NextPosition = transform.position + new Vector3(-2f, 0f, 2f);
                     HasMoved = true;
+
+                    if (UpLeftButton.activeSelf) UpLeftButton.SetActive(false);
                 }
                 if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Keypad9) && !HasMoved)
                 {
                     NextPosition = transform.position + new Vector3(2f, 0f, 2f);
                     HasMoved = true;
+
+                    if (UpRightButton.activeSelf) UpRightButton.SetActive(false);
                 }
                 if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Keypad1) && !HasMoved)
                 {
                     NextPosition = transform.position + new Vector3(-2f, 0f, -2f);
                     HasMoved = true;
+
+                    if (DownLeftButton.activeSelf) DownLeftButton.SetActive(false);
                 }
                 if (Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.Keypad3) && !HasMoved)
                 {
                     NextPosition = transform.position + new Vector3(2f, 0f, -2f);
                     HasMoved = true;
+
+                    if (DownRightButton.activeSelf) DownRightButton.SetActive(false);
                 }
             }
 
